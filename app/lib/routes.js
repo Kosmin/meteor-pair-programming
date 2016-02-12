@@ -4,11 +4,13 @@ Router.configure({
   notFoundTemplate: 'NotFound'
 });
 
-
-Router.route('/', {
+Router.route('/:token', {
   name: 'home',
   controller: 'HomeController',
-  where: 'client'
+  where: 'client',
+  data: function() {
+    CodeSnippets.findOne({token: this.params.token});
+  }
 });
 
 
