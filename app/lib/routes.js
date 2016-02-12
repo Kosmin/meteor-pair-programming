@@ -10,3 +10,10 @@ Router.route('/', {
   controller: 'HomeController',
   where: 'client'
 });
+
+
+Router.route('components', {
+  name: 'components',
+  controller: 'ComponentsController',
+  where: 'client'
+});
