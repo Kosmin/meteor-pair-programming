@@ -1,5 +1,4 @@
 CodeBox = React.createClass({
-
   propTypes: {
     snippet: React.PropTypes.object
   },
