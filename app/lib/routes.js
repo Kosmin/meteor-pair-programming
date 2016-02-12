@@ -22,3 +22,10 @@ Router.route('/:token', {
     }
   }
 });
+
+
+Router.route('components', {
+  name: 'components',
+  controller: 'ComponentsController',
+  where: 'client'
+});
