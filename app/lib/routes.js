@@ -12,7 +12,8 @@ Router.route('/', {
 
 
 Router.route('/:token', {
-  name: 'home',
+  name: 'code_snippet',
+  template: 'Home',
   controller: 'HomeController',
   where: 'client',
   data: function() {
