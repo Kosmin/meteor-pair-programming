@@ -26,6 +26,20 @@ Template.Home.onRendered(function () {
     <CodeBox snippet={Template.currentData().currentSnippet} field="suggestion" />,
     document.getElementById("suggestion-code-box")
   );
+
+  Tracker.autorun(function (e) {
+    editor = AceEditor.instance("original-code-box");
+    if(editor.loaded!==undefined){
+    e.stop();
+    }
+  });
+
+  Tracker.autorun(function (e) {
+    editor = AceEditor.instance("suggestion-code-box");
+    if(editor.loaded!==undefined){
+    e.stop();
+    }
+  });
 });
 
 Template.Home.onDestroyed(function () {

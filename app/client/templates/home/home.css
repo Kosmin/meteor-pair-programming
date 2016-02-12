@@ -3,3 +3,13 @@
 /*****************************************************************************/
 .home {
 }
+
+#original-code-box {
+  width: 600px;
+  height: 500px;
+}
+
+#suggestion-code-box {
+  width: 600px;
+  height: 500px;
+}
